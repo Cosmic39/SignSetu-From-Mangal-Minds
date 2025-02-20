@@ -1,5 +1,6 @@
 # SignSetu-From-Mangal-Minds
 This is a Hackathon project based on the event HACK ON0 MOUNT. Our team Mangal Minds will be representing this model.
+Please unzip the Image RAR file in the folder to the same directory so that the file can work proplerly.
 
 
 
