@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #001f4d;
+        }
+        header {
+            background: #001f4d;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar {
+            background: #001f4d;
+            padding: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropbtn img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 300px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: left;
+            left: 0;
+            top: 40px;
+            padding: 15px;
+        }
+        .dropdown-content ol {
+            margin: 0;
+            padding: 0;
+            list-style-position: inside;
+            color: #001f4d;
+        }
+        .dropdown-content ol li {
+            padding: 10px 0;
+            font-weight: bold;
+        }
+        .navbar-images img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        .content {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()"><img src="images/K.png" alt="Menu"></button>
+            <div class="dropdown-content" id="dropdownContent">
+                <ol>
+                    <li><a href="#MY PROFILE">MY PROFILE</a></li>
+                    <li><a href="#MESSAGE">MESSAGE</a></li>
+                    <li><a href="#SUBSCRIPTION PLANS">SUBSCRIPTION PLANS</a></li>
+                    <li><a href="#ACCOUNT SETTING">ACCOUNT SETTING</a></li>
+                    <li><a href="#THEME AND COLOURS">THEME AND COLOURS</a></li>
+                    <li><a href="#SKILLS & DEVELOPMENT">SKILLS & DEVELOPMENT</a></li>
+                    <li><a href="#SUPPORT & HELP CENTRE">SUPPORT & HELP CENTRE</a></li>
+                    <li><a href="About Us.html">ABOUT US</a></li>
+                    <li><a href="Login.html">LOG OUT</a></li>
+                </ol>
+            </div>
+        </div>
+        <header>
+            <h1>About Us</h1>
+        </header>
+        <div class="navbar-images">
+            <a href="Homepage.html"><img src="images/T.png" alt="Home"></a>
+            <a href="#link2"><img src="images/M.png" alt="Share"></a>
+            <a href="#link3"><img src="images/N.png" alt="Search"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h2>Who We Are</h2>
+        <p>Our project is dedicated to breaking communication barriers by converting sign language into speech. We have encountered several challenges along the way, including the need for an intuitive user interface, ensuring accuracy in communication, and optimizing the platform for seamless user experience.</p>
+        <h2>Challenges We Faced</h2>
+        <p>One of the main challenges was designing an accessible and user-friendly interface that caters to people of all abilities. Ensuring compatibility across multiple devices and platforms required significant effort in testing and refining. Moreover, gathering feedback from real users helped us identify areas of improvement.</p>
+        <p>Another significant hurdle was developing a reliable system that accurately interprets gestures and converts them into understandable speech. Various iterations and refinements were made to improve responsiveness and minimize errors.</p>
+        <h2>Our Progress</h2>
+        <p>Despite these challenges, our team has made remarkable progress. We have successfully built a structured platform that allows seamless communication. The addition of customizable accessibility settings has made it easier for users to adjust the interface according to their preferences.</p>
+        <p>We have also focused on ensuring privacy and security within our system. By implementing strict data protection measures, we aim to build trust and provide a safe environment for users.</p>
+        <h2>Our Mission</h2>
+        <p>We aim to create innovative solutions that enhance accessibility, bridge communication gaps, and promote inclusivity worldwide. By continuously refining our approach and incorporating user feedback, we strive to make a positive impact on communication accessibility.</p>
+        <h2>Our Team</h2>
+        <p>Shubham Shashank Singh</p>
+        <p>Saumya Agrahari </p>
+        <p>Anshuman Rai </p>
+        <p>Ayush Tiwari</p>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

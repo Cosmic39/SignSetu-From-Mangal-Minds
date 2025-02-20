@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language to Speech</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #001f4d;
+        }
+        header {
+            background:  #001f4d;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background: #001f4d;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            align-items: normal;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .navbar {
+            background: #001f4d;
+            padding: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropbtn img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 300px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: left;
+            left: 0;
+            top: 40px;
+            padding: 15px;
+        }
+        .dropdown-content ol {
+            margin: 0;
+            padding: 0;
+            list-style-position: inside;
+            color: #001f4d;
+        }
+        .dropdown-content ol li {
+            padding: 10px 0;
+            font-weight: bold;
+        }
+        .navbar-images img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+        }
+    </style>
+    <script>
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()"><img src="images/K.png" alt="Menu"></button>
+            <div class="dropdown-content" id="dropdownContent">
+                <ol>
+                    <li><a href="#MY PROFILE">MY PROFILE</a></li>
+                    <li><a href="#MESSAGE">MESSAGE</a></li>
+                    <li><a href="#SUBSCRIPTION PLANS">SUBSCRIPTION PLANS</a></li>
+                    <li><a href="#ACCOUNT SETTING">ACCOUNT SETTING</a></li>
+                    <li><a href="#THEME AND COLOURS">THEME AND COLOURS</a></li>
+                    <li><a href="#SKILLS & DEVELOPMENT">SKILLS & DEVELOPMENT</a></li>
+                    <li><a href="#SUPPORT & HELP CENTRE">SUPPORT & HELP CENTRE</a></li>
+                    <li><a href="About Us.html">ABOUT US</a></li>
+                    <li><a href="Login.html">LOG OUT</a></li>
+                </ol>
+            </div>
+        </div>
+        <header>
+            <h1>Indian Sign Language(ISL) to Speech</h1>
+        </header>
+        <div class="navbar-images">
+            <a href="Homepage.html"><img src="images/T.png" alt="Home"></a>
+            <a href="#link2"><img src="images/M.png" alt="Share"></a>
+            <a href="#link3"><img src="images/N.png" alt="Search"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+    <section id="input">
+        <h2>Sign Language Input</h2>
+        <p id="translatedText">This Button Will Open Camera To Capture the Hand Movements.......</p>
+        <button id="capture">Capture Gesture</button>
+    </section>
+    
+    <section id="output">
+        <h2>Speech Output</h2>
+        <p id="translatedText">Recognized text will appear here...</p>
+        <button id="speak">Convert to Speech</button>
+    </section>
+    
+    <section id="help">
+        <h2>Help & Guide</h2>
+        <p>Follow the steps to use this tool:</p>
+        <ol>
+            <li>Allow camera access.</li>
+            <li>Make a sign gesture in front of the camera.</li>
+            <li>Click "Capture Gesture" to process the sign.</li>
+            <li>The recognized text will appear, and you can convert it to speech.</li>
+        </ol>
+    </section>
+    
+    <section id="about">
+        <h2>About This Project</h2>
+        <p>This project aims to bridge communication gaps by converting sign language into speech using AI-powered recognition and text-to-speech conversion.</p>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

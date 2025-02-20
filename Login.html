@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background: url('images/P.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .login-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+        .login-container h2 {
+            color: #3b3b98;
+        }
+        .login-container p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .login-container label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background: #00008b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .login-container button:hover {
+            background: #000066;
+        }
+        .forgot-password, .signup a {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #00008b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .social-login {
+            margin-top: 20px;
+        }
+        .social-login img {
+            width: 30px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .login-image {
+            width: 100%;
+            max-width: 200px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                height: auto;
+                padding: 20px;
+            }
+            .login-container {
+                width: 100%;
+                padding: 15px;
+            }
+            .login-container input, .login-container button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <p>Already registered? Log in here.</p>
+        <img src="images/A.jpg" alt="Sign Language Illustration" class="login-image">
+        <form action="Homepage.html">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button type="submit">Login</button>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+        </form>
+        <div class="signup">
+            <p>Need an account? <a href="Create Account.html">Sign up</a></p>
+        </div>
+        <div class="social-login">
+            <img src="images/B.png" alt="Google">
+            <img src="images/C.png" alt="Facebook">
+            <img src="images/D.png" alt="LinkedIn">
+        </div>
+    </div>
+</body>
+</html>

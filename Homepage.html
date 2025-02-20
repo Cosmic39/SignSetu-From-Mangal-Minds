@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            background: url("images/S.jpeg") no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .navbar {
+            background: #001f4d;
+            padding: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropbtn img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 300px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: left;
+            left: 0;
+            top: 40px;
+            padding: 15px;
+        }
+        .dropdown-content ol {
+            margin: 0;
+            padding: 0;
+            list-style-position: inside;
+            color: #001f4d;
+        }
+        .dropdown-content ol li {
+            padding: 10px 0;
+            font-weight: bold;
+        }
+        .navbar-images img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .welcome-title {
+            font-size: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #001f4d;
+            margin-top: 20px;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .main-option-container {
+            background: white;
+            padding: 15px;
+            margin: 10px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+        .option-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .option-container img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+        .option-container button {
+            flex: 1;
+            padding: 10px;
+            background: white;
+            color: #001f4d;
+            border: 2px solid #001f4d;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            text-align: left;
+            transition: background 0.3s, color 0.3s;
+        }
+        .option-container button:hover {
+            background: #001f4d;
+            color: white;
+        }
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .icons a {
+            display: inline-block;
+        }
+        .icons img {
+            width: 40px;
+        }
+    </style>
+    <script>
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()"><img src="images/K.png" alt="Menu"></button>
+            <div class="dropdown-content" id="dropdownContent">
+                <ol>
+                    <li><a href="#MY PROFILE">MY PROFILE</a></li>
+                    <li><a href="#MESSAGE">MESSAGE</a></li>
+                    <li><a href="#SUBSCRIPTION PLANS">SUBSCRIPTION PLANS</a></li>
+                    <li><a href="#ACCOUNT SETTING">ACCOUNT SETTING</a></li>
+                    <li><a href="#THEME AND COLOURS">THEME AND COLOURS</a></li>
+                    <li><a href="#SKILLS & DEVELOPMENT">SKILLS & DEVELOPMENT</a></li>
+                    <li><a href="#SUPPORT & HELP CENTRE">SUPPORT & HELP CENTRE</a></li>
+                    <li><a href="About Us.html">ABOUT US</a></li>
+                    <li><a href="Login.html">LOG OUT</a></li>
+                </ol>
+            </div>
+        </div>
+        <div class="navbar-images">
+            <a href="#link1"><img src="images/L.png" alt="Notification"></a>
+            <a href="#link2"><img src="images/M.png" alt="Share"></a>
+            <a href="#link3"><img src="images/N.png" alt="Search"></a>
+        </div>
+    </div>
+    <h2 class="welcome-title">WELCOME</h2>
+    <div class="container">
+        <p class="subtitle">Hands Speak, We Listen—<br>Breaking Barriers with Every Gesture.</p>
+        <div class="main-option-container">
+            <div class="option-container">
+                <img src="images/H.png" alt="ISL Speech">
+                <button><a href="ISL to Speech.html">ISL to Speech/Text<br>Speech/Text to ISL</a></button>
+            </div>
+        </div>
+        <div class="main-option-container">
+            <div class="option-container">
+                <img src="images/I.png" alt="Learn ISL">
+                <button><a href="Learn ISL.html">Learn ISL with <br>Text and Speech</a></button>
+            </div>
+        </div>
+        <div class="main-option-container">
+            <div class="option-container">
+                <img src="images/J.png" alt="ISL to ASL">
+                <button>ISL to ASL<br>ASL to ISL</button>
+            </div>
+        </div>
+    </div>
+    <div class="icons">
+        <a href="#connect"><img src="images/E.jpg" alt="Connect"></a>
+        <a href="#home"><img src="images/F.png" alt="Home"></a>
+        <a href="#video"><img src="images/G.png" alt="Video"></a>
+    </div>
+</body>
+</html>
